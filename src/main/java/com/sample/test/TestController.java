@@ -17,4 +17,10 @@ public class TestController {
 		System.out.println("마스터-버그픽스 병합 테스트입니다.");
 		return "merge";
 	}
+	
+	@RequestMapping("/bugfix.do")
+	public String bugfix() {
+		System.out.println("브랜치 테스트입니다.");
+		return "bugfix";
+	}
 }
